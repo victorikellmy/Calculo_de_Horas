@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 function App() {
   const [distancia, setDis] = useState(0);
   const [velociodade, setVel] = useState(0);
