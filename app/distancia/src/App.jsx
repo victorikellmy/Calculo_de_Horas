@@ -27,15 +27,15 @@ function App() {
           <form className='flex flex-col gap-4 items-stretch w-full max-w-sm mt-10' onSubmit={calcular}>
             <label className='flex  flex-col gap-3 w-full text-2xl'>Distancia</label>
             <input placeholder="Digite a distancia em km"
-              value={distancia}
-              className='  bg-transparent flex-1  text-gray-100 text-xl placeholder:text-gray-400 outline-none py-3 px-4 rounded bg-gray-800 w-full  focus-within:ring-2 ring-cyan-300 '
-              onChange={(e) => setDis(e.target.value)}
-            />
+            value={distancia}
+            className = '  bg-transparent flex-1  text-gray-100 text-xl placeholder:text-gray-400 outline-none py-3 px-4 rounded bg-gray-900 w-full  focus-within:ring-2 ring-cyan-300 '
+            onChange={(e) => setDis(e.target.value)}
+          />
 
             <label className='flex flex-col gap-3 w-full text-2xl mt-5'>Velocidade</label>
             <input placeholder="Velociadade em km/h"
               value={velociodade}
-              className='bg-transparent flex-1  text-gray-100 text-xl placeholder:text-gray-400 outline-none py-3 px-4 rounded bg-gray-800 w-full  focus-within:ring-2 ring-cyan-300'
+              className='bg-transparent flex-1  text-gray-100 text-xl placeholder:text-gray-400 outline-none py-3 px-4 rounded bg-gray-900 w-full  focus-within:ring-2 ring-cyan-300'
               onChange={(e) => setVel(e.target.value)}
             />
 
