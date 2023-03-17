@@ -9,7 +9,12 @@ function App() {
     function calcular(e){
       e.preventDefault();
       
-      setCal(distancia/velociodade);
+      const tempoEstimadoEmHoras = distancia / velociodade;
+      const tempoEstimadoEmMinutos = tempoEstimadoEmHoras * 60;
+      const horas = Math.floor(tempoEstimadoEmHoras);
+      const minutos = Math.floor(tempoEstimadoEmMinutos % 60);
+      
+      setCal(`${horas} horas e ${minutos} minutos`);
     }
 
     return (
